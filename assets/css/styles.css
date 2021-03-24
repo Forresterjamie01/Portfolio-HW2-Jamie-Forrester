@@ -8,17 +8,17 @@
     --secondary-color: #2a9e1d;
     --tertiary-color: #161003;
     --quaternary-color: #823734;
-    --font-primary: Georgia, 'Times New Roman', Times, serif;
-    --font-secondary: Verdana, Geneva, Tahoma, sans-serif;
+    --font-primary: Times, 'Times New Roman', Cursive, serif;
+    --font-secondary: Georgia, Cursive, serif, sans-serif;
 }
 
-/* link styling */
+/* link style */
 a {
     text-decoration: none;
     color: var(--secondary-color);
 }
 
-/* header styling */
+/* header style */
 header {
     padding: 35px 35px 20px 0px;
     background: var(--tertiary-color);
@@ -69,4 +69,24 @@ header nav ul li a:hover {
     background: var(--primary-color);
     border-radius: 15px;
     transition: 0.5s;
+}
+
+/* hero styling */
+.hero {
+    background-image: url(../images/background.png);
+    height: 150px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-bottom: 3px solid var(--quaternary-color);
+}
+
+.hero h2 {
+    font-family: var(--font-primary);
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 20px;
+    padding: 10px 40px;
+    margin-bottom: 10px;
+    border-radius: 10px 0 0 10px;
 }
