@@ -6,8 +6,8 @@
 :root {
     --primary-color: #280fb6;
     --secondary-color: #2a9e1d;
-    --tertiary-color: #161003;
-    --quaternary-color: #823734;
+    --tertiary-color: #050401;
+    --quaternary-color: #e92019;
     --font-primary: Times, 'Times New Roman', Cursive, serif;
     --font-secondary: Georgia, Cursive, serif, sans-serif;
 }
@@ -73,7 +73,7 @@ header nav ul li a:hover {
 
 /* hero styling */
 .hero {
-    background-image: url(../images/Jamie\ Forrester\ Portfolio\ Photo.jpg);
+    background-image: url(../images/background\ image\ 2.jpg);
     height: 150px;
     display: flex;
     justify-content: flex-end;
@@ -108,7 +108,7 @@ main {
     font-size: 45px;
     font-weight: bold;
     font-family: var(--font-primary);
-    border-right: solid rgb(19, 22, 196) 4px;
+    border-right: solid rgb(5, 5, 8) 9px;
     border-radius: 15px;
     text-align: right;
     padding-right: 20px;
@@ -119,33 +119,17 @@ main {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: normal;
 }
 
 .container-content p {
-    width: 70%;
-    margin-left: 10px;
+    width: 90%;
+    margin-left: 5px;
     font-size: 18px;
     line-height: 1.5;
     font-family: var(--font-secondary);
+    color: var(--secondary-color);
 }
-
-/* about me styling */
-.about-picture {
-    background-image: url(../images/Jamie\ Forrester\ Portfolio\ Photo.jpg);
-    background-size: cover;
-    height: 300px;
-    width: 210px;
-    border-radius: 5px;
-}
-
-.about-picture:hover {
-    margin: 25px 0;
-    background-image: url(../images/background\ image.jpeg) ;
-    background-size: contain;
-    height: 230px;
-}
-
 /* projects styling*/
 .grid-container {
     width: 100%;
@@ -154,11 +138,10 @@ main {
 }
 .grid-layout {
     width: 100%;
-    display: flex
-    ;
+    display: grid;
     grid-template-columns: repeat(3, 2fr);
-    grid-template-rows: repeat(3, 175px);
-    grid-gap: 10px;
+    grid-template-rows: repeat(2, 170px);
+    grid-gap: 5px;
     grid-auto-flow: dense;
 }
 
