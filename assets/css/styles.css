@@ -73,7 +73,7 @@ header nav ul li a:hover {
 
 /* hero styling */
 .hero {
-    background-image: url(../images/background.png);
+    background-image: url(../images/Jamie\ Forrester\ Portfolio\ Photo.jpg);
     height: 150px;
     display: flex;
     justify-content: flex-end;
@@ -89,4 +89,230 @@ header nav ul li a:hover {
     padding: 10px 40px;
     margin-bottom: 10px;
     border-radius: 10px 0 0 10px;
+}
+
+/* Body styling */
+main {
+    background-image: url(../images/background\ image.jpeg);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0;
+    display: flex;
+}
+
+.container-title {
+    width: 20%;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: var(--font-primary);
+    border-right: solid rgb(19, 22, 196) 4px;
+    border-radius: 15px;
+    text-align: right;
+    padding-right: 20px;
+    margin-right: 10px;
+}
+
+.container-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container-content p {
+    width: 70%;
+    margin-left: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: var(--font-secondary);
+}
+
+/* about me styling */
+.about-picture {
+    background-image: url(../images/Jamie\ Forrester\ Portfolio\ Photo.jpg);
+    background-size: cover;
+    height: 300px;
+    width: 210px;
+    border-radius: 5px;
+}
+
+.about-picture:hover {
+    margin: 25px 0;
+    background-image: url(../images/background\ image.jpeg) ;
+    background-size: contain;
+    height: 230px;
+}
+
+/* projects styling*/
+.grid-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.grid-layout {
+    width: 100%;
+    display: flex
+    ;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(3, 175px);
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+}
+
+.project-1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.project-image {
+    border: 4px solid var(--primary-color);
+    border-radius: 5px;
+    display: grid;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: var(--tertiary-color);
+}
+
+.snapshot {
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    transition: 0.5s;
+}
+
+.snapshot:hover {
+    opacity: 5;
+}
+
+.description {
+    position: absolute;
+    width: 100px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    background: var(--primary-color);
+    border-radius: 0 15px 15px 0;
+    text-align: left;
+    color: var(--secondary-color);
+}
+
+.description h3 {
+    font-size: 14px;
+    font-family: var(--font-primary);
+}
+
+.description p {
+    font-size: 10px;
+    font-family: var(--font-secondary);
+}
+
+/* contact me styling */
+.contact {
+    align-content: center;
+    font-family: var(--font-secondary);
+    font-weight: 18px;
+}
+
+.contact a {
+    padding: 10px;
+    border-left: 2px solid var(--primary-color);
+    border-right: 2px solid var(--primary-color);
+    border-radius: 15px;
+}
+
+.contact a:hover {
+    background: var(--primary-color);
+    transition: 0.5s;
+}
+
+/* footer styling */
+footer {
+    height: 50px;
+    border-top: 3px solid var(--quaternary-color);
+    background: var(--tertiary-color);
+    text-align: center;
+}
+
+footer div {
+    color: var(--secondary-color);
+    font-family: var(--font-secondary);
+    font-size: 10px;
+    padding-top: 20px;
+}
+
+/* media queries */
+@media screen and (max-width: 1292px) {
+    .container-content {
+        display: inline;
+    }
+
+    .container-content p {
+        width: 100%;
+    }
+
+    .about-picture {
+        float: left;
+        margin-right: 15px;
+    }
+
+    .contact {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 1028px) {
+    header  {
+        padding-bottom: 0;
+        position: relative;
+        justify-content: center;
+    }
+    
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .grid-layout {
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: repeat(4, 100px);
+    }
+
+    .snapshot {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 0 10px;
+    }
+    .container {
+        display: inline;
+    }
+
+    .container-title {
+        width: 100%;
+        text-align: center;
+        border-right: none;
+        border-bottom: solid black 4px;
+        margin: 10px 0;
+        padding: 0;
+        padding-bottom: 10px;
+    }
+
+    .contact {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    header nav ul {
+        justify-content: space-around;
+    }
+    
+    header nav ul li a {
+        margin-top: 15px;
+    }
 }
